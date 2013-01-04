@@ -1,0 +1,41 @@
+Identifier = "revRaidLoot"
+
+Name = {
+  English = "revRaidLoot",
+  German = "revRaidLoot",
+  French = "revRaidLoot",
+}
+
+NameShort = "revRaidLoot"
+
+Description = {
+  English = "A addon to track the DKP ( or other types of raid loot systems) for raid leaders.",
+}
+Author = "Ingshtrom"
+
+Version = "2.3.0"
+
+
+Email = "ingshtrom.developer@gmail.com"
+
+Environment = "1.8"
+
+RunOnStartup = {
+	"Main.lua",
+}
+
+SavedVariables = {
+  revRaidLootAccount = "account";
+}
+
+Embed = {
+	['lib/LibSimpleWidgets'] = true,
+	['lib/SafesRaidManager'] = true,
+	['lib/revLibImport'] = true,
+}
+
+Dependencies = {
+	LibSimpleWidgets = {'required', 'before'},
+	SafesRaidManager = {'required', 'before'},
+	revLibImport = {'required', 'before'},
+}

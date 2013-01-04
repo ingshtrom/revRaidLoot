@@ -1,0 +1,33 @@
+Identifier = "revLibImport"
+
+Name = {
+  English = "revLibImport",
+  German = "revLibImport",
+  French = "revLibImport",
+}
+
+NameShort = "revLibImport"
+
+Description = {
+  English = "A addon to import a CSV formatted file into revRaidLoot",
+}
+Author = "Ingshtrom"
+
+Version = "1.0.0"
+
+
+Email = "ingshtrom.developer@gmail.com"
+
+Environment = "1.8"
+
+RunOnStartup = {
+	"Main.lua",
+}
+
+Embed = {
+	['lib/LibSimpleWidgets'] = true,
+}
+
+Dependencies = {
+  LibSimpleWidgets = {'required', 'before'},
+}
